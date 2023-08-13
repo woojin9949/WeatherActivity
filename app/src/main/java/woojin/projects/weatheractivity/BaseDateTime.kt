@@ -13,7 +13,7 @@ data class BaseDateTime(
     companion object {
         fun getBaseDateTime(): BaseDateTime {
             var dateTime = LocalDateTime.now(ZoneId.of("Asia/Seoul"))
-            Log.d("maybe", dateTime.toLocalTime().toString())
+            //Log.d("maybe", dateTime.toLocalTime().toString())
 
             val baseTime = when (dateTime.toLocalTime()) {
                 in LocalTime.of(0, 0)..LocalTime.of(2, 30) -> {
